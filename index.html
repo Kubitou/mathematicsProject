@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mathematics.css" />
+    <link rel="icon" type="image/x-icon" href="assets/icon.jpg">
+
+    <title>Treino de Matemática</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <h1>Treino de Operações</h1>
+
+        <h2>Escolha a operação</h2>
+        <section class="operations">
+
+            <div class="radio-container">
+                <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="operation-addition" name="operation" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">+</span>
+                    </label>
+                </div>
+
+                <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="operation-subtraction" name="operation" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">-</span>
+                    </label>
+                </div>
+
+                <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="operation-multiplication" name="operation" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">*</span>
+                    </label>
+                </div>
+                <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="operation-division" name="operation" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">/</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="range">
+            <h2 class="h2">Intervalo dos números</h2>
+
+            <div class="input-group">
+                <label for="min">Mínimo</label>
+                <input type="number" id="min" name="min" />
+                <label for="max">Máximo</label>
+                <input type="number" id="max" name="max" />
+            </div>
+        </section>
+
+        <button id="submit" type="button">Gerar Operação</button>
+
+        <section class="result">
+            <p id="p-calculate"></p>
+            <button class="show-value" type="button">Mostrar Resultado</button>
+            <p id="p-timer">0.00s</p>
+        </section>
+
+    </main>
+
+    <script type="module" src="./dist/ts/Main.js"></script>
+</body>
+
+</html>
